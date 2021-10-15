@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.card {
+  max-width: 450px;
+  background-color: #ffebcd;
+  border-radius: 3rem;
+  color: #fff;
+  overflow: hidden;
+}
+
+.card .card__sol {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 6rem 2rem;
+  font-size: 4rem;
+}
+.card .card__cnt {
+  margin: 3rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card .card__cnt .card__c,
+.card .card__cnt .card__c__sign,
+.card .card__cnt .card__c__equal {
+  display: inline-block;
+  cursor: pointer;
+  width: 40%;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem;
+  color: #000;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #5f9ea0;
+}
+.card .card__cnt p:hover,
+.card__clr:hover {
+  box-shadow: 0.5px 0.5px 2px 2px #808080;
+}
+
+.card__clr {
+  display: inline-block;
+  cursor: pointer;
+  width: 10%;
+  padding: 1.5rem 0rem;
+  margin: 0rem 3rem;
+  margin-top: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #5f9ea0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+}
