@@ -24,7 +24,7 @@ for (let i = 0; i < signs.length; i++) {
     let sign = signs[i].textContent;
     symbol = sign;
     console.log(sign);
-    ip.value += ` ${sign} `;
+    ip.value += `${sign}`;
   });
 }
 
@@ -34,12 +34,32 @@ equal.addEventListener("click", function () {
   let num1 = Number(final.slice(0, index));
   let num2 = Number(final.slice(index + 1));
   if (symbol === "+") {
-    ip.value = num1 + num2;
+    let temp = num1 + num2;
+    if (temp % 1 != 0) {
+      ip.value = Math.round(temp * 1000) / 1000;
+    } else {
+      ip.value = temp;
+    }
   } else if (symbol === "-") {
-    ip.value = num1 - num2;
+    let temp = num1 - num2;
+    if (temp % 1 != 0) {
+      ip.value = Math.round(temp * 1000) / 1000;
+    } else {
+      ip.value = temp;
+    }
   } else if (symbol === "*") {
-    ip.value = num1 * num2;
+    let temp = num1 * num2;
+    if (temp % 1 != 0) {
+      ip.value = Math.round(temp * 1000) / 1000;
+    } else {
+      ip.value = temp;
+    }
   } else if (symbol === "/") {
-    ip.value = num1 / num2;
+    let temp = num1 / num2;
+    if (temp % 1 != 0) {
+      ip.value = Math.round(temp * 1000) / 1000;
+    } else {
+      ip.value = temp;
+    }
   }
 });

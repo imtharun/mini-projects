@@ -28,7 +28,7 @@ body {
   border-radius: 3rem;
   color: #fff;
   overflow: hidden;
-  box-shadow: 2px 2px 5px 1px #808080;
+  box-shadow: 0px 1px 20px 2px #808080;
 }
 
 .card .card__sol {
